@@ -200,9 +200,12 @@
                     It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
                     questions, our support team would be happy to help you.
                 </p>
-                <form action="" class="" method="POST" id="get-started-form" data-aos="fade-down">
-                    <input type="text" placeholder="email@example.com" class="email">
-                    <button class="btn started-btn">Get Started For Free</button>
+                <form name="emailForm" id="get-started-form" data-aos="fade-down" novalidate>
+                   <div class="form-control">
+                    <input type="text" placeholder="email@example.com" class="email" name="email">
+                    <small></small>
+                   </div>
+                    <button onclick="checkInputs()" class="btn started-btn">Get Started For Free</button>
                 </form>
             </div>
         </div>
